@@ -7,8 +7,8 @@ const promptUser = () => {
     return inquirer.prompt([
         {
             type: 'input',
-            name: 'name',
-            message: 'What is the name of your project?'
+            name: 'title',
+            message: 'What is the title of your project?'
             //     validate: nameInput => {
             //         if (nameInput) {
             //             return true;
@@ -26,24 +26,57 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'installation instructions',
+            name: 'installation',
             message: 'Please provide installation instructions'
         },
         {
             type: 'input',
             name: 'usage',
             message: 'Please provide instructions for use of your project'
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Please enter your Github username'
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your email address'
         }
 
 
-    ]);
+    ])
 
 
 };
-promptUser().then(answers => console.log(answers));
+
+promptUser()
+    .then((answers) => {
+        const { title, description, installation, usage, github, email } = answers;
+        const template = `
+        ##${title}
+
+        ## Description
+        ${description}
+
+        ## Table of Contents
+
+
+        ## Installation
+        ${installation}
+
+        ## Usage
+        ${usage}
+        `
+        // console.log("User answers: ", answers);
+        fs.writeFileSync("README.md", template);
+        // console.log("User answers saved successfully!");
+    })
+// promptUser().then(answers => console.log(answers));
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+// function writeToFile(myReadme, data) { }
 
 // TODO: Create a function to initialize app
 function init() { }
