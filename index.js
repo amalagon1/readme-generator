@@ -8,25 +8,31 @@ const path = require('path');
 const questions = [{
     type: 'input',
     name: 'title',
-    message: 'What is the title of your project?'
-    // validate: function (answer) {
-    //     if (!answer) {
-    //         return "You must enter a description for your project."
-    //     }
-    //     return true;
-    // }
+    message: 'What is the title of your project?',
+    validate: function (answer) {
+        if (!answer) {
+            return "You must enter a title."
+        }
+        return true;
+    }
 
 },
 {
     type: 'list',
     name: 'license',
     message: 'Please choose a license',
-    choices: ['MIT', 'APACHE 2.0']
+    choices: ['MIT', 'APACHE_2.0', 'Boost_1.0', 'BSD_2--Clause']
 },
 {
     type: 'input',
     name: 'description',
-    message: 'Please describe your project'
+    message: 'Please describe your project',
+    validate: function (answer) {
+        if (!answer) {
+            return "You must enter a description."
+        }
+        return true;
+    }
 },
 {
     type: 'input',
