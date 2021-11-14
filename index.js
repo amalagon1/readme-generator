@@ -9,9 +9,9 @@ const questions = [{
     type: 'input',
     name: 'title',
     message: 'What is the title of your project?'
-    // validate: function(answer) {
-    //     if(answer.length<1){
-    //         return console.log("You must enter a description for your project.")
+    // validate: function (answer) {
+    //     if (!answer) {
+    //         return "You must enter a description for your project."
     //     }
     //     return true;
     // }
