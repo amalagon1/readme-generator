@@ -11,7 +11,6 @@ In order to get the application working, you need to first Git clone into your l
 
 ## Usage
 
-<iframe src="https://giphy.com/embed/KnJMFB3ctgvAiitJiu" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/KnJMFB3ctgvAiitJiu">via GIPHY</a></p>
-
+https://user-images.githubusercontent.com/89949832/141719824-28d9c1b2-0c2a-4e85-ad9a-e26aea5399ae.mov
 
 
