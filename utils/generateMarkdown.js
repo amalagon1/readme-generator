@@ -21,27 +21,31 @@ ${data.description}
 
 ## Table of Contents
 
- * [Installation](#installation)
- * [Usage](#usage)
- * [Contribution](#contribution)
- * [Tests](#tests)
+${data.installation ? '* [Installation](#installation)' : ''}
+ ${data.usage ? '* [Usage](#usage)' : ''}
+ ${data.contribution ? '* [Contribution](#contribution)' : ''}
+ ${data.tests ? '* [Tests](#tests)' : ''}
  * [Questions](#questions)
 
 ${data.installation ? '## Installation Instructions' : ''}
 
 ${data.installation ? data.installation : ''}
 
-## Usage
+${data.usage ? '## Usage' : ''}
 
 ${data.usage}
 
-## Contribution
+${data.contribution ? '## Contribution' : ''}
 
 ${data.contribution}
 
 ${data.tests ? '## Tests' : ''}
 
 ${data.tests ? data.tests : ''}
+
+## License
+
+This application is licensed under ${data.license}
 
 ## Questions
 
