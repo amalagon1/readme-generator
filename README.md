@@ -1,8 +1,9 @@
-# thing
+# Readme Generator
   ![License:APACHE_2.0](https://img.shields.io/badge/license-APACHE_2.0-yellow.svg)
 ## Description
 
-dfdfdfd
+This application allows the user to create a professional readme file without spending any time creating the template. The user simply answers a series of prompts, and the readme file is generated.
+
 
 ## Table of Contents
 
@@ -23,14 +24,15 @@ dfdfdfd
 
 ## Contribution
 
-dfdfd
+I am the sole contributor to this project
 
 ## Tests
 
-dfdfdd
+npm tests
 
 ## Questions
 
-If you have any questions, email me at 
+If you have any questions, email me at:
+amalagon251@gmail.com
 
 Github: github.com/dfdfdfd
