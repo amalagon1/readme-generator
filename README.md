@@ -4,17 +4,9 @@
 
 This application allows the user to create a professional readme file without spending any time creating the template. The user simply answers a series of prompts, and the readme file is generated.
 
+## Installation
 
-## Table of Contents
-
- * [Installation](#installation)
- * [Usage](#usage)
- * [Contribution](#contribution)
- * [Tests](#tests)
- * [Questions](#questions)
-
-
-
+In order to get the application working, you need to first Git clone into your local directory, then run npm install. Then run node index.js from the terminal, answer the prompts, and your README file will be generated!
 
 
 ## Usage
@@ -22,17 +14,4 @@ This application allows the user to create a professional readme file without sp
 <iframe src="https://giphy.com/embed/KnJMFB3ctgvAiitJiu" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/KnJMFB3ctgvAiitJiu">via GIPHY</a></p>
 
 
-## Contribution
 
-I am the sole contributor to this project
-
-## Tests
-
-npm tests
-
-## Questions
-
-If you have any questions, email me at:
-amalagon251@gmail.com
-
-Github: github.com/dfdfdfd
